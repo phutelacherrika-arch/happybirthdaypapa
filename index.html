@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+
+<title>Happy Birthday to THE BEST DAD EVER</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- MUSIC -->
+
+<audio id="bgMusic"
+loop>
+
+<source src="music/bgmusic.mp3"
+type="audio/mp3">
+
+</audio>
+
+<!-- HOME -->
+
+<section class="home">
+
+<h1>Happy Birthday Papa ❤️</h1>
+
+<img src="images/calendar.jpg"
+class="calendar">
+
+<div class="buttons">
+
+<button onclick="showSection('love')">
+Why We Love You ❤️
+</button>
+
+<button onclick="showSection('video')">
+ 🎥
+</button>
+
+<button onclick="openLetter()">
+ Letter💌
+</button>
+
+
+
+<button onclick="showSection('scratch')">
+Scratch card
+</button>
+
+</div>
+
+</section>
+
+<!-- LOVE -->
+
+<section id="love"
+class="hidden section">
+
+<h2>Why We Love You ❤️</h2>
+
+<div class="love-cards">
+
+<div class="card">
+You always support us.
+</div>
+
+<div class="card">
+You love us unconditionally.
+</div>
+
+<div class="card">
+because you are THE BEST.
+</div>
+
+<div class="card">
+You comfort us when we are sad.
+</div>
+
+<div class="card">
+you listen and talk to us patiently.
+</div>
+
+<div class="card">
+you support our decisions.
+</div>
+
+<div class="card">
+you work hard for our happiness.
+</div>
+
+<div class="card">
+You celebrate our achievements proudly. 
+</div>
+
+<div class="card">
+You sacrifice silently.
+</div>
+
+</div>
+
+<div class="balloons">
+
+<img src="images/balloon1.png"
+class="balloon">
+
+<img src="images/balloon2.png"
+class="balloon">
+
+<img src="images/balloon3.png"
+class="balloon">
+
+</div>
+
+</section>
+
+<!-- VIDEO -->
+
+<section id="video"
+class="hidden section">
+
+<h2>Video Message 🎥</h2>
+
+<video controls width="90%">
+
+<source src="videos/dadvideo.mp4"
+type="video/mp4">
+
+</video>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letter"
+class="hidden section">
+
+<h1 class="bestdad">
+with lots of love😘
+</h1>
+
+<h2 class="letter-heading">
+A Letter To our Papa 💌
+</h2>
+
+<div class="letter-box">
+
+<!-- EDIT LETTER HERE -->
+
+<p>
+
+Dear Papa,
+Happiee Birthday!! We are so lucky to have you in our life. Thank You for always supporting us. 
+You are our best friend. No matter how busy or tired you are , you always make time for us and make us feel loved.
+Your sacrifices and efforts can never truly be repaid but we want you to know that they mean everything to us.
+We are proud to be your kids.
+On your birthday, We pray that you always stay healthy, happy and successful. May your life be filled with endless smiles, peace, and love because you deserve all the happiness in the world.
+
+Thank you for every sacrifice,
+every smile,
+every lesson and every moment.
+
+You are the reason
+our family feels complete. You are precious to all of us.
+
+We can never express how lucky
+We feel to have you in our life.
+<br/>
+
+Happy Birthday Papa ❤️
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- SCRATCH -->
+
+<!-- SCRATCH SECTION -->
+
+<section id="scratch"
+class="hidden section">
+
+<h2>Scratch 🎁</h2>
+
+<div class="scratch-container">
+
+<canvas id="scratchCanvas"
+width="320"
+height="180">
+</canvas>
+
+<div class="scratch-message">
+
+🎉 YAY 🎉<br>
+You are 54!
+it's not that old!! ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WISHES -->
+
+<section class="wish-section">
+
+<h2>Send Your Wishes 🎉</h2>
+
+<input type="text"
+id="wishInput"
+placeholder="comment...">
+
+<button onclick="addWish()">
+Send Wish
+</button>
+
+<div id="wishContainer"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+<!-- FIREBASE -->
+
+<script type="module"
+src="firebase.js"></script>
+
+</body>
+</html>
